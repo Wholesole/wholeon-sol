@@ -29,24 +29,16 @@
       height:430px;
       object-fit:cover;
       filter:brightness(60%);
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:1;
     }
-/* Tambahan supaya tombol & link bisa diklik */
-.hero {
-    position: relative;
-}
 
-.hero-text, .btn {
-    position: relative;
-    z-index: 5;
-}
+    /* agar tombol/logo tidak ketutupan image */
+    .hero-text, .btn { position:relative; z-index:5; }
 
-.hero img.bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-    /* Logo di hero */
+    /* Logo */
     .hero img.logo{
       position:absolute;
       top:35px;
@@ -57,6 +49,7 @@
       border-radius:50%;
       border:4px solid #ffd700;
       box-shadow:0 0 18px rgba(255,215,0,.7);
+      z-index:5;
     }
 
     .hero-text{
@@ -133,29 +126,26 @@
 
 <body>
 
-  <!-- ===== HERO SECTION (digabung logo + background) ===== -->
+  <!-- ===== HERO ===== -->
   <div class="hero">
-    <img src="whole-hero.jpg" class="bg">        <!-- background -->
-    <img src="logo.jpg" class="logo">           <!-- Logo kamu tampil -->
+    <img src="whole-hero.jpg" class="bg">
+    <img src="logo.jpg" class="logo">
 
     <div class="hero-text">
       <h1>WHLON — Whole On Sol</h1>
-      
 
-     <!-- bagian tombol -->
-<a class="btn" href="#">BUY</a>
-<a class="btn btn-outline" href="#">CHART</a>
-<a class="btn btn-outline" href="https://x.com/2023Abdi?t=mRhRQOXYdpEdoPXvMWiubw&s=08" target="_blank">TWITTER</a>
-
+      <a class="btn" href="#">BUY</a>
+      <a class="btn btn-outline" href="#">CHART</a>
+      <a class="btn btn-outline" href="https://x.com/2023Abdi?t=mRhRQOXYdpEdoPXvMWiubw&s=08" target="_blank">TWITTER</a>
     </div>
   </div>
 
   <div class="ticker">Ticker : WHLON</div>
 
- <p style="margin-top:30px;">
+  <p style="margin-top:30px;">
     WHLON is coming.<br>
-    A dog, a dream, a chart ready to explode.
-</p>
+    A dog, a dream, a chart ready to explode.
+  </p>
 
   <!-- ===== ROADMAP ===== -->
   <h2 class="roadmap-title">📅 Roadmap</h2>
@@ -186,7 +176,8 @@
     </div>
 
   </div>
-<!-- ===== FOOTER ===== -->
+
+  <!-- ===== FOOTER ===== -->
 <footer style="margin-top:60px; padding:25px 0; background:#0b0b0b; border-top:1px solid #ffd70050;">
   <p style="margin:0; font-size:18px; color:#e8d892;">
     © 2025 <b>WHLON</b> — Whole On Sol. Powered by Solana Community.
@@ -197,17 +188,3 @@
   </p>
 
   <div style="margin-top:12px;">
-    <a href="https://x.com/2023Abdi?t=mRhRQOXYdpEdoPXvMWiubw&s=08" target="_blank" 
-       style="color:#ffd700; text-decoration:none; margin:0 10px;">Twitter</a>
-    <a href="#" style="color:#ffd700; text-decoration:none; margin:0 10px;">Telegram</a>
-    <a href="#" style="color:#ffd700; text-decoration:none; margin:0 10px;">Buy</a>
-    <a href="#" style="color:#ffd700; text-decoration:none; margin:0 10px;">Chart</a>
-  </div>
-</footer>
-</body>
-</html>
-
-
-
-
-
