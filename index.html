@@ -30,7 +30,22 @@
       object-fit:cover;
       filter:brightness(60%);
     }
+/* Tambahan supaya tombol & link bisa diklik */
+.hero {
+    position: relative;
+}
 
+.hero-text, .btn {
+    position: relative;
+    z-index: 5;
+}
+
+.hero img.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
     /* Logo di hero */
     .hero img.logo{
       position:absolute;
@@ -174,4 +189,5 @@
 
 </body>
 </html>
+
 
