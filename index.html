@@ -3,76 +3,155 @@
 <head>
   <title>WHLON — Whole On Sol</title>
   <meta charset="UTF-8">
-  <meta name="description" content="Wholeon SOL (WHLON) — cheerful meme token on Solana blockchain">
+  <meta name="description" content="WHLON — cheerful meme token on Solana blockchain">
 
   <style>
-    <!-- ================= ROADMAP ================= -->
-<h2 class="roadmap-title">📅 What's Coming Next</h2>
-
-<div class="roadmap">
-
-  <div class="phase-box">
-    <div class="phase-number">1</div>
-    <div class="phase-title">Phase 1 – Launch</div>
-    <p class="phase-text">Deploy WHLON on Solana, set liquidity, and start fair distribution.</p>
-  </div>
-
-  <div class="phase-box">
-    <div class="phase-number">2</div>
-    <div class="phase-title">Phase 2 – Community Build</div>
-    <p class="phase-text">Holder events, memes contest, early utilities and marketing push.</p>
-  </div>
-
-  <div class="phase-box">
-    <div class="phase-number">3</div>
-    <div class="phase-title">Phase 3 – Growth & Partnerships</div>
-    <p class="phase-text">Listings, collabs, influencer push & ecosystem expansion.</p>
-  </div>
-
-  <div class="phase-box">
-    <div class="phase-number">4</div>
-    <div class="phase-title">Phase 4 – Long Term</div>
-    <p class="phase-text">Maintain community, transparency, and WHLON as a lasting meme brand.</p>
-  </div>
-
-</div>
+    /* ===== GLOBAL STYLE ===== */
     body {
-      font-family: Arial;
-      background: black;
-      color: white;
-      text-align: center;
-      padding: 40px;
-      margin: 0;
+      margin:0;
+      background:#000;
+      font-family:Arial;
+      color:#e6c25a;
+      text-align:center;
+    }
+    h1 { font-size:55px; color:#ffd700; margin:0; }
+    p { font-size:20px; max-width:800px; margin:auto; line-height:1.5; }
+
+    /* ===== HERO SECTION ===== */
+    .hero{
+      position:relative;
+      width:100%;
+      height:430px;
+      overflow:hidden;
+    }
+    .hero img{
+      width:100%;
+      height:430px;
+      object-fit:cover;
+      filter:brightness(65%);
+    }
+    .hero-text{
+      position:absolute;
+      top:50%; left:50%;
+      transform:translate(-50%,-50%);
+    }
+    .hero-text p{ color:#e8d892; margin-top:10px; }
+
+    .btn{
+      background:#ffd700;
+      color:#000;
+      padding:12px 30px;
+      border-radius:10px;
+      font-weight:bold;
+      margin:8px;
+      display:inline-block;
+      text-decoration:none;
+    }
+    .btn-outline{
+      border:2px solid #ffd700;
+      background:transparent;
+      color:#ffd700;
     }
 
-    h1 { font-size: 45px; color: #ffd700; }
-    p { font-size: 20px; line-height: 1.4; max-width: 800px; margin: auto; }
-
-    .ticker {
-      font-size: 26px; background: #ffd700; color: black;
-      padding: 10px; display: inline-block; border-radius: 10px; margin-top: 10px;
+    /* Ticker */
+    .ticker{
+      margin-top:25px;
+      background:#ffd700;
+      color:#000;
+      font-size:26px;
+      font-weight:bold;
+      padding:10px 20px;
+      display:inline-block;
+      border-radius:10px;
     }
 
-    /* —— ROADMAP STYLE —— */
-    .roadmap-title {
-      font-size: 40px; font-weight: 900; margin-top: 60px; color: #ffd700;
+    /* ===== ROADMAP ===== */
+    .roadmap-title{
+      font-size:42px;
+      font-weight:900;
+      color:#ffd700;
+      margin-top:70px;
     }
-
-    .roadmap {
-      width: 85%;
-      margin: auto;
-      margin-top: 30px;
+    .roadmap{
+      width:85%;
+      margin:auto;
+      margin-top:25px;
     }
-
-    .phase-box {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid #ffd70055;
-      border-radius: 18px;
-      padding: 20px;
-      margin-top: 22px;
-      box-shadow: 0 0 12px rgba(255,215,0,0.25);
-      text-align: left;
+    .phase-box{
+      background:rgba(255,255,255,0.08);
+      border:1px solid #ffd70055;
+      border-radius:16px;
+      padding:20px;
+      margin-top:18px;
+      text-align:left;
+      box-shadow:0 0 15px rgba(255,215,0,0.25);
     }
+    .phase-number{
+      font-size:30px;
+      font-weight:bold;
+      color:#ffd700;
+    }
+    .phase-title{
+      font-size:26px;
+      color:#ffd700;
+      margin-top:6px;
+      font-weight:700;
+    }
+    .phase-text{ color:#e6d98d; margin-top:6px; }
+  </style>
+</head>
 
-    .phase-number {
+<body>
 
+  <!-- HERO BANNER -->
+  <div class="hero">
+    <img src="whole-hero.jpg">
+    <div class="hero-text">
+      <h1>WHLON — Whole On Sol</h1>
+      <p>Cheerful golden meme dog powered by Solana community.</p>
+
+      <a class="btn" href="#">BUY</a>
+      <a class="btn btn-outline" href="#">CHART</a>
+      <a class="btn btn-outline" href="#">TWITTER</a>
+    </div>
+  </div>
+
+  <div class="ticker">Ticker : WHLON</div>
+
+  <p style="margin-top:30px;">
+    WHLON is a cheerful meme token on Solana, inspired by a happy golden dog.
+    Fun, positive vibes, and community-driven – nothing more, nothing less.
+  </p>
+
+  <!-- ROADMAP -->
+  <h2 class="roadmap-title">📅 Roadmap</h2>
+  <div class="roadmap">
+
+    <div class="phase-box">
+      <div class="phase-number">1</div>
+      <div class="phase-title">Phase 1 — Launch</div>
+      <p class="phase-text">Deploy WHLON, add liquidity, begin fair distribution.</p>
+    </div>
+
+    <div class="phase-box">
+      <div class="phase-number">2</div>
+      <div class="phase-title">Phase 2 — Community Build</div>
+      <p class="phase-text">Memes contest, holder utility start, early marketing push.</p>
+    </div>
+
+    <div class="phase-box">
+      <div class="phase-number">3</div>
+      <div class="phase-title">Phase 3 — Growth</div>
+      <p class="phase-text">Influencer push, partnerships, listings & exposure boost.</p>
+    </div>
+
+    <div class="phase-box">
+      <div class="phase-number">4</div>
+      <div class="phase-title">Phase 4 — Long Term</div>
+      <p class="phase-text">Maintain community, transparency, WHLON as lasting meme brand.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
