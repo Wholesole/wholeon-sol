@@ -14,7 +14,7 @@
       color:#e6c25a;
       text-align:center;
     }
-    h1 { font-size:55px; color:#ffd700; margin:0; }
+    h1 { font-size:55px; color:#ffd700; margin:10px 0; }
     p { font-size:20px; max-width:800px; margin:auto; line-height:1.5; }
 
     /* ===== HERO SECTION ===== */
@@ -24,15 +24,30 @@
       height:430px;
       overflow:hidden;
     }
-    .hero img{
+    .hero img.bg{
       width:100%;
       height:430px;
       object-fit:cover;
-      filter:brightness(65%);
+      filter:brightness(60%);
     }
+
+    /* Logo di hero */
+    .hero img.logo{
+      position:absolute;
+      top:35px;
+      left:50%;
+      transform:translateX(-50%);
+      width:130px;
+      height:130px;
+      border-radius:50%;
+      border:4px solid #ffd700;
+      box-shadow:0 0 18px rgba(255,215,0,.7);
+    }
+
     .hero-text{
       position:absolute;
-      top:50%; left:50%;
+      top:60%;
+      left:50%;
       transform:translate(-50%,-50%);
     }
     .hero-text p{ color:#e8d892; margin-top:10px; }
@@ -103,9 +118,11 @@
 
 <body>
 
-  <!-- HERO BANNER -->
+  <!-- ===== HERO SECTION (digabung logo + background) ===== -->
   <div class="hero">
-    <img src="whole-hero.jpg">
+    <img src="whole-hero.jpg" class="bg">        <!-- background -->
+    <img src="logo.jpg" class="logo">           <!-- Logo kamu tampil -->
+
     <div class="hero-text">
       <h1>WHLON — Whole On Sol</h1>
       <p>Cheerful golden meme dog powered by Solana community.</p>
@@ -123,7 +140,7 @@
     Fun, positive vibes, and community-driven – nothing more, nothing less.
   </p>
 
-  <!-- ROADMAP -->
+  <!-- ===== ROADMAP ===== -->
   <h2 class="roadmap-title">📅 Roadmap</h2>
   <div class="roadmap">
 
